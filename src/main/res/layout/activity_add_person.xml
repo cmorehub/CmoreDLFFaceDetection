@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        tools:context="ch.zhaw.facerecognition.Activities.AddPersonActivity">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/txt_Name"
+            android:layout_centerInParent="true" />
+
+        <ToggleButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnTrainingTest"
+            android:checked="false"
+            android:textOn="測試資料"
+            android:textOff="訓練資料"
+            android:layout_below="@+id/txt_Name"
+            android:layout_centerInParent="true" />
+
+        <ToggleButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnReferenceDeviation"
+            android:checked="false"
+            android:textOn="偏差修正Deviation"
+            android:textOff="參考Reference"
+            android:layout_below="@+id/btnTrainingTest"
+            android:layout_centerInParent="true"
+            android:enabled="false"/>
+
+        <ToggleButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnTimeManually"
+            android:checked="false"
+            android:textOn="手動擷取照片"
+            android:textOff="自動擷取照片"
+            android:layout_below="@+id/btnReferenceDeviation"
+            android:layout_centerInParent="true"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="開始(請看鏡頭)"
+            android:id="@+id/btn_Start"
+            android:layout_below="@+id/btnTimeManually"
+            android:layout_centerInParent="true" />
+    </LinearLayout>
+</RelativeLayout>

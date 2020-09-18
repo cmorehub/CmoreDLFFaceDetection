@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_centerInParent="true">
+
+        <Button
+            style="@android:style/Widget.Holo.Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="基本設定"
+            android:id="@+id/button_settings"
+            android:layout_marginBottom="10dp"/>
+
+        <Button
+            style="@android:style/Widget.Holo.Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="加入人員"
+            android:id="@+id/button_addPerson"
+            android:layout_marginBottom="10dp" />
+
+        <Button
+            style="@android:style/Widget.Holo.Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="開始訓練"
+            android:id="@+id/button_recognition_training"
+            android:layout_marginBottom="10dp" />
+
+        <Button
+            style="@android:style/Widget.Holo.Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="開始辨識"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/button_recognition_view" />
+
+    </LinearLayout>
+</RelativeLayout>

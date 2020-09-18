@@ -1,0 +1,71 @@
+apply plugin: 'com.android.library'
+//apply plugin: 'net.saliman.cobertura'
+buildscript {
+    repositories {
+        google()
+        jcenter()
+    }
+    dependencies {
+        classpath "com.android.tools.build:gradle:4.0.0"
+
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+allprojects {
+    repositories {
+        maven { url 'https://jitpack.io' }
+    }
+}
+
+android {
+    compileSdkVersion 27
+    buildToolsVersion '27.0.3'
+    defaultConfig {
+        minSdkVersion 21
+        targetSdkVersion 27
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+//cobertura {
+//    coverageFormats = [ 'html', 'xml' ]
+//}
+buildscript {
+    repositories {
+        jcenter()
+        mavenCentral()
+        maven {
+            url "https://oss.sonatype.org/content/repositories/snapshots"
+        }
+    }
+    dependencies {
+        classpath 'net.saliman:gradle-cobertura-plugin:2.5.2'
+    }
+}
+
+repositories{
+    maven {
+        url "http://dl.bintray.com/qualeams/Android-Face-Recognition-Deep-Learning-Library"
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.android.support:appcompat-v7:27.0.2'
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    implementation 'com.android.support:support-v4:27.0.2'
+    implementation 'org.tensorflow:tensorflow-android:1.4.0'
+    implementation ('ch.zhaw:facerecognitionlibrary:1.5.3'){
+        exclude group: 'org.tensorflow',module: 'tensorflow-android'
+    }
+    implementation 'com.github.cmorehub:cmoredlf:-SNAPSHOT'
+}

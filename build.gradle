@@ -1,5 +1,3 @@
-apply plugin: 'com.android.library'
-//apply plugin: 'net.saliman.cobertura'
 buildscript {
     repositories {
         google()
@@ -18,6 +16,9 @@ allprojects {
         maven { url 'https://jitpack.io' }
     }
 }
+
+apply plugin: 'com.android.library'
+//apply plugin: 'net.saliman.cobertura'
 
 android {
     compileSdkVersion 27

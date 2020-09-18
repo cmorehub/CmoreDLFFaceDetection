@@ -22,6 +22,7 @@ import android.os.Bundle;
 import android.preference.Preference;
 import android.preference.PreferenceManager;
 import android.widget.Toast;
+
 import com.example.rueychi.tensorflowface.R;
 
 public class SettingsActivity extends AppCompatPreferenceActivity {

@@ -27,6 +27,7 @@ import android.widget.ToggleButton;
 import com.example.rueychi.tensorflowface.R;
 
 import java.io.File;
+
 import ch.zhaw.facerecognitionlibrary.Helpers.FileHelper;
 
 public class AddPersonActivity extends Activity {

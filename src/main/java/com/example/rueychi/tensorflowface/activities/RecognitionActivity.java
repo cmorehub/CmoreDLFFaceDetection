@@ -30,10 +30,11 @@ import java.util.Locale;
 
 import ch.zhaw.facerecognitionlibrary.Helpers.CustomCameraView;
 import ch.zhaw.facerecognitionlibrary.Helpers.FileHelper;
-//import ch.zhaw.facerecognitionlibrary.Helpers.MatOperation;
 import ch.zhaw.facerecognitionlibrary.PreProcessor.PreProcessorFactory;
 import ch.zhaw.facerecognitionlibrary.Recognition.Recognition;
 import ch.zhaw.facerecognitionlibrary.Recognition.RecognitionFactory;
+
+//import ch.zhaw.facerecognitionlibrary.Helpers.MatOperation;
 
 public class RecognitionActivity extends Activity implements CameraBridgeViewBase.CvCameraViewListener2,TextToSpeech.OnInitListener {
     private CustomCameraView mRecognitionView;

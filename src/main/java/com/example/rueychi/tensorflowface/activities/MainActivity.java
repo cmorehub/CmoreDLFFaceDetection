@@ -1,9 +1,9 @@
 package com.example.rueychi.tensorflowface.activities;
 
 import android.content.Intent;
+import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
@@ -11,6 +11,7 @@ import android.widget.Toast;
 import com.example.rueychi.tensorflowface.R;
 
 import java.io.File;
+
 import ch.zhaw.facerecognitionlibrary.Helpers.FileHelper;
 
 public class MainActivity extends AppCompatActivity {

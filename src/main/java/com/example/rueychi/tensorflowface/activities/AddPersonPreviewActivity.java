@@ -8,20 +8,25 @@ import android.preference.PreferenceManager;
 import android.view.SurfaceView;
 import android.view.View;
 import android.widget.ImageButton;
+
 import com.example.rueychi.tensorflowface.R;
+
 import org.opencv.android.CameraBridgeViewBase;
 import org.opencv.android.OpenCVLoader;
 import org.opencv.core.Core;
 import org.opencv.core.Mat;
 import org.opencv.core.Rect;
+
 import java.io.File;
 import java.util.Date;
 import java.util.List;
+
 import ch.zhaw.facerecognitionlibrary.Helpers.CustomCameraView;
 import ch.zhaw.facerecognitionlibrary.Helpers.FileHelper;
 import ch.zhaw.facerecognitionlibrary.Helpers.MatName;
-//import ch.zhaw.facerecognitionlibrary.Helpers.MatOperation;
 import ch.zhaw.facerecognitionlibrary.PreProcessor.PreProcessorFactory;
+
+//import ch.zhaw.facerecognitionlibrary.Helpers.MatOperation;
 
 public class AddPersonPreviewActivity extends Activity implements CameraBridgeViewBase.CvCameraViewListener2 {
     public static final int TIME = 0;

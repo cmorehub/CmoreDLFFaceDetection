@@ -22,7 +22,7 @@ allprojects {
   repositories {  
     maven { url 'https://jitpack.io' }  
     maven { url "https://dl.bintray.com/qualeams/Android-Face-Recognition-Deep-Learning-Library" }  
-    }  
+  }  
 }  
 ~~~
 

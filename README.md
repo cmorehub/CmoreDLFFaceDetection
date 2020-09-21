@@ -11,19 +11,19 @@ dependencies { implementation 'com.github.cmorehub:CmoreDLFFaceDetection:c256ae2
 在自己專案 build:gradle中加入  
 ~~~
 buildscript {  
-            repositories {  
-                maven {  
-                    url "https://oss.sonatype.org/content/repositories/snapshots"  
-                }  
-            }  
-          }  
+  repositories {  
+    maven {  
+      url "https://oss.sonatype.org/content/repositories/snapshots"  
+    }  
+  }  
+}  
   
-          allprojects {  
-            repositories {  
-                maven { url 'https://jitpack.io' }  
-                maven { url "https://dl.bintray.com/qualeams/Android-Face-Recognition-Deep-Learning-Library" }  
-            }  
-          }  
+allprojects {  
+  repositories {  
+    maven { url 'https://jitpack.io' }  
+    maven { url "https://dl.bintray.com/qualeams/Android-Face-Recognition-Deep-Learning-Library" }  
+    }  
+}  
 ~~~
 
 第二步驟呼叫人臉辨識功能頁面  

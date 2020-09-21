@@ -12,9 +12,7 @@ dependencies { implementation 'com.github.cmorehub:CmoreDLFFaceDetection:c256ae2
 ~~~
 buildscript {  
   repositories {  
-    maven {  
-      url "https://oss.sonatype.org/content/repositories/snapshots"  
-    }  
+    maven { url "https://oss.sonatype.org/content/repositories/snapshots" }  
   }  
 }  
   

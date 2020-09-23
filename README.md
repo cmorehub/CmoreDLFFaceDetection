@@ -1,6 +1,6 @@
 # CmoreDLFFaceDetection
 CmoreDLFFaceDetection
-人臉辨識
+人臉辨識Android
 
 第一步驟環境設定
 在自己專案 build:gradle(app)中加入    
@@ -24,7 +24,7 @@ allprojects {
 }  
 ~~~
 
-第二步驟呼叫人臉辨識功能頁面  
+第二步驟在Activity呼叫人臉辨識功能頁面  
 ~~~
 startActivity(new Intent(this, com.example.rueychi.tensorflowface.activities.MainActivity.class));
 ~~~
